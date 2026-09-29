@@ -1,0 +1,190 @@
+/**
+ * 全局样式
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c0c4cc;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f7fa;
+}
+
+.page-container {
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s;
+}
+.card-box:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card {
+  text-align: center;
+  padding: 24px;
+  border-radius: 12px;
+  color: #fff;
+  transition: transform 0.3s;
+}
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+.stat-card .num {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+.stat-card .label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.photo-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.photo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+.photo-card .img-wrap {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+.photo-card .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.photo-card:hover .img-wrap img {
+  transform: scale(1.05);
+}
+.photo-card .info {
+  padding: 12px;
+}
+.photo-card .info .title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #303133;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.photo-card .info .meta {
+  font-size: 12px;
+  color: #909399;
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.album-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.album-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+.album-card .cover {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.album-card .cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.album-card .cover .count {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.album-card .detail {
+  padding: 14px;
+}
+.album-card .detail h3 {
+  font-size: 16px;
+  color: #303133;
+  margin-bottom: 6px;
+}
+.album-card .detail p {
+  font-size: 13px;
+  color: #909399;
+}
+
+.chart-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+.chart-box h3 {
+  font-size: 16px;
+  color: #303133;
+  margin-bottom: 16px;
+  padding-left: 10px;
+  border-left: 3px solid #409eff;
+}
+
+.el-table {
+  width: 100% !important;
+}
